@@ -1,0 +1,21 @@
+{
+  "name": "crawler4js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "jsdom": "^19.0.0",
+    "puppeteer": "^13.4.0"
+  }
+}
