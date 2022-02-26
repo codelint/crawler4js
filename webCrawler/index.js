@@ -1,5 +1,5 @@
-import puppeteer from 'puppeteer'
-import { JSDOM } from 'jsdom'
+const puppeteer = require('puppeteer')
+const { JSDOM } = require('jsdom')
 
 class WebCrawler {
   urlList = []
@@ -50,4 +50,4 @@ class WebCrawler {
   }
 }
 
-export default WebCrawler
+module.exports = WebCrawler
