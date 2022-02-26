@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.26.0",
     "jsdom": "^19.0.0",
     "puppeteer": "^13.4.0"
   }
