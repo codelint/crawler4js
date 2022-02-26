@@ -1,4 +1,4 @@
-import WebCrawler from '../webCrawler/index.js'
+const WebCrawler = require('../webCrawler/index.js')
 
 class MyCrawler extends WebCrawler {
   shouldVisit(url) {
