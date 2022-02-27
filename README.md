@@ -3,7 +3,11 @@
 安装
 
 ```bash
-npm install codelint/crawler4js
+npm install crawler4js
+
+# If the installation errors, please use the following command to install.
+npm i --ignore-scripts crawler4js
+node node_modules/puppeteer/install.js
 ```
 
 调用
