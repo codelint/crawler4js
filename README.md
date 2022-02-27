@@ -29,7 +29,7 @@ let crawler = new Crawler({
 }) 
 
 // start to running
-crawler.run("https://github.com/codelint/crawler4js")
+crawler.start("https://github.com/codelint/crawler4js")
 
 ```
 

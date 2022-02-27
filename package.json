@@ -1,7 +1,11 @@
 {
+  "author": "codelint <codelint@foxmail.com>",
   "name": "crawler4js",
+  "description": "helping for search data from web page",
   "version": "0.0.1",
-  "description": "",
+  "repository": {
+      "url": "https://github.com/codelint/crawler4js"
+  }
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,9 +13,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+      "crawler",
+      "crawler4j",
+      "crawler4js",
+      "data",
+      "html",
+      "http"
+  ],
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.26.0",
     "jsdom": "^19.0.0",
