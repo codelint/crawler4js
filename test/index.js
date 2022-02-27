@@ -1,15 +1,16 @@
-const WebCrawler = require('../webCrawler/index.js')
+const WebCrawler = require('../lib/index.js')
 
 class MyCrawler extends WebCrawler {
   shouldVisit(url) {
-    return url.startsWith('https://www.baidu.com/')
+    return url.startsWith('https://github.com/codelint/crawler4js')
   }
 
   visit({ document, html, url }) {
-    // console.log(html)
     console.log(`${document.title} - ${url}`)
   }
 }
 
-const myCrawler = new MyCrawler()
-myCrawler.start('https://www.baidu.com/')
+const myCrawler = new MyCrawler({
+  executablePath: 'chromium.app/Contents/MacOS/Chromium'
+})
+myCrawler.start('https://github.com/codelint/crawler4js')

@@ -1,9 +1,17 @@
 const puppeteer = require('puppeteer')
 const { JSDOM } = require('jsdom')
 
-class WebCrawler {
+class Crawler4js {
+  executablePath = '' // Chromium path
   urlList = []
   history = []
+
+  constructor(options = {}) {
+    const { executablePath } = options
+    if (executablePath) {
+      this.executablePath = executablePath
+    }
+  }
 
   shouldVisit() {
     console.error('You should implement shouldVisit method.')
@@ -24,7 +32,11 @@ class WebCrawler {
   }
 
   async getHtmlContent(url) {
-    const browser = await puppeteer.launch()
+    const options = {}
+    if (this.executablePath) {
+      options.executablePath = this.executablePath
+    }
+    const browser = await puppeteer.launch(options)
     const page = await browser.newPage()
     await page.goto(url, { waitUntil: 'networkidle2', })
     const html = await page.content()
@@ -50,4 +62,4 @@ class WebCrawler {
   }
 }
 
-module.exports = WebCrawler
+module.exports = Crawler4js
