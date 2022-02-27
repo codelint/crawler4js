@@ -24,7 +24,7 @@ let crawler = new Crawler({
   },
   // optional, default is function(){ console.log(url) }
   "visit": function(url, content, document, window, redirectUrl){
-    
+    console.log(`${document.title} - ${url}`)
   }
 }) 
 
