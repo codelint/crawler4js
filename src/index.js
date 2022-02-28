@@ -29,8 +29,8 @@ class Crawler4js {
 
   visit = null
 
-  onError() {
-
+  onError(error) {
+    console.error(error)
   }
 
   async getHrefs(page, selector) {
