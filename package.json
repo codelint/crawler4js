@@ -1,6 +1,6 @@
 {
   "name": "crawler4js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "crawler for node.js.",
   "main": "lib/index.js",
   "repository": "github:codelint/crawler4js",
