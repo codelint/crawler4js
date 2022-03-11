@@ -31,7 +31,7 @@ cd "/root/src/$NODE_NAME"
 mkdir /opt/nodejs
 ./configure --prefix=/opt/nodejs
 
-make -j4 && make install
+make && make install
 
 cat >>/etc/bash.bashrc <<"EOF"
 if [ -x "/opt/nodejs/bin/node" ]
