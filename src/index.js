@@ -43,7 +43,9 @@ class Crawler4js {
   }
 
   async getHtmlContent(url) {
-    const options = {}
+    const options = {
+      args: ['--blink-settings=imagesEnabled=false']
+    }
     if (this.executablePath) {
       options.executablePath = this.executablePath
     }
