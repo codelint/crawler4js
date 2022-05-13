@@ -6,3 +6,4 @@ dist-ssr
 node_modules
 temp
 chromium.app
+_*
